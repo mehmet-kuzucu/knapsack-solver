@@ -16,7 +16,7 @@ def create_random(N):
     return weights, values
 
 if __name__ == "__main__":
-    weights, values = create_random(10_000_000)
+    weights, values = create_random(10_000)
     #save the data set to a csv file
     df = pd.DataFrame({'weights': weights, 'values': values})
     df.to_csv('random_data.csv', index=False)
